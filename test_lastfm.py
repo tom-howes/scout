@@ -6,9 +6,9 @@ def test_similar_artists():
     test_artists = ["Radiohead", "Queen", "Red Axes", "SASDASFSAsadas"]
 
     for artist in test_artists:
-        print(f"\n_____")
+        print(f"\n{'_'*30}")
         print(f"Testing: {artist}")
-        print(f"_____")
+        print("_"*30)
 
         similar = client.get_similar_artists(artist, limit=10)
 
